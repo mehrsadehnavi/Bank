@@ -32,4 +32,10 @@ public class Payment {
         Main main = new Main();
         main.changeScene("enter.fxml");
     }
+
+    public void back(ActionEvent actionEvent) throws Exception {
+        Main main = new Main();
+        main.changeScene("enter.fxml");
+        Main.out.writeUTF("back");
+    }
 }

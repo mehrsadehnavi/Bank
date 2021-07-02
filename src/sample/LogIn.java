@@ -22,13 +22,27 @@ public class LogIn {
     public void continueButton(ActionEvent actionEvent) throws Exception {
         aliass = alias.getText().toString();
         passwords = password.getText().toString();
-        if (aliass.equals(""))
+
+        Main.out.writeUTF(aliass);
+        Main.out.writeUTF(passwords);
+
+        if (aliass.isEmpty())
             label.setText("Empty field!");
-        else if (passwords.equals(""))
+        else if (passwords.isEmpty())
             label.setText("Empty field!");
+        else if (!(Main.in.readBoolean()))
+            label.setText("Please make sure the alias or the password are correct!");
         else {
             Main main = new Main();
             main.changeScene("enter.fxml");
+            Main.out.writeUTF("enter");
         }
+
+    }
+
+    public void back(ActionEvent actionEvent) throws Exception {
+        Main main = new Main();
+        main.changeScene("signUpOrIn.fxml");
+        Main.out.writeUTF("back");
     }
 }

@@ -6,6 +6,8 @@ import javafx.scene.control.Label;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 
+import java.io.IOException;
+
 public class PersonalInfo {
     @FXML
     Label name;
@@ -30,26 +32,47 @@ public class PersonalInfo {
     @FXML
     Button done;
 
-    public void button() {
-        name.setText(AfterSignUpButton.usernames);
-        national.setText(AfterSignUpButton.nationals);
-        email.setText(AfterSignUpButton.emails);
-        //accNo.setText();
-        telephone.setText(AfterSignUpButton.telephones);
-        alias.setText(LogIn.aliass);
-        kind.setText(CreateAcc.kinds);
-    }
+    public void button() throws IOException {
 
-    public void show(ActionEvent actionEvent) {
-        b.setText("Balance:");
-        //balance.setText();
-        transaction.setVisible(true);
-        transaction.isWrapText();
-        done.setVisible(true);
+        transaction.setEditable(false);
+        transaction.getStylesheets().add("color.css");
+
+        int i = 0;
+        while (i < 4)
+        {
+            if(i == 0)
+                name.setText(Main.in.readUTF().toString());
+            else if(i == 1)
+                national.setText(Main.in.readUTF().toString());
+            else if(i == 2)
+                telephone.setText(Main.in.readUTF().toString());
+            else if(i == 3)
+                email.setText(Main.in.readUTF().toString());
+            i++;
+        }
+        i = 0;
+        while (i < 4)
+        {
+            if(i == 0)
+                alias.setText(Main.in.readUTF().toString());
+            else if(i == 1)
+                accNo.setText(Main.in.readUTF().toString());
+            else if(i == 2)
+                kind.setText(Main.in.readUTF().toString());
+            //else if(i == 3)
+            //   email.setText(Main.in.readUTF().toString());
+            i++;
+        }
     }
 
     public void done(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
         main.changeScene("enter.fxml");
+    }
+
+    public void back(ActionEvent actionEvent) throws Exception {
+        Main main = new Main();
+        main.changeScene("enter.fxml");
+        Main.out.writeUTF("back");
     }
 }

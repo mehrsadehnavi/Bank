@@ -2,7 +2,10 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.scene.text.Font;
 
 public class AfterSignInButton {
@@ -17,22 +20,36 @@ public class AfterSignInButton {
 
     static String nationals, passwords;
 
+    public void password(ActionEvent actionEvent) { this.password = password; }
+
+    public void national(ActionEvent actionEvent) {
+        this.national = national;
+    }
 
     public void continueButton(ActionEvent actionEvent) throws Exception {
         nationals = national.getText().toString();
         passwords = password.getText().toString();
 
-        if (nationals.equals("m") && passwords.equals("m")) {
+        //Main.out.writeUTF(nationals);
+        //Main.out.writeUTF(passwords);
+
+/*        if (Main.in.readBoolean()) {
             Main main = new Main();
             main.changeScene("logIn.fxml");
             nationals = national.getText().toString();
-        }
+        } */
 
-        else if (nationals.equals("") || passwords.equals(""))
+        if (nationals.equals("") || passwords.equals(""))
             label.setText("Empty field!");
 
         else
             label.setText("Please make sure the username and password are correct!");
+        //Main.out.writeUTF("LogIn");
+    }
+
+    public void back(ActionEvent actionEvent) throws Exception {
+        Main main = new Main();
+        main.changeScene("signUpOrIn.fxml");
+        //Main.out.writeUTF("back");
     }
 }
-

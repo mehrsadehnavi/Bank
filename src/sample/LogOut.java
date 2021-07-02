@@ -25,9 +25,9 @@ public class LogOut {
     public void delete(ActionEvent actionEvent) throws Exception {
         if (check == 0)
             label.setText("Please accept the transmission!");
-        else if (passwords.equals(""))
+        else if (passwords.isEmpty())
             label.setText("Empty field!");
-        else if (destinations.equals(""))
+        else if (destinations.isEmpty())
             label.setText("Empty field!");
         else {
             Main main = new Main();
@@ -38,5 +38,11 @@ public class LogOut {
         passwords = password.getText().toString();
         destinations = destination.getText().toString();
         check = 1;
+    }
+
+    public void back(ActionEvent actionEvent) throws Exception {
+        Main main = new Main();
+        main.changeScene("enter.fxml");
+        Main.out.writeUTF("back");
     }
 }

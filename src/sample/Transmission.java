@@ -39,7 +39,7 @@ public class Transmission {
     public void search(ActionEvent actionEvent) {
         destinations = destination.getText().toString();
         amounts = amount.getText().toString();
-        if (destinations.equals(""))
+        if (destinations.isEmpty())
             label.setText("Empty field!");
         else if (amounts.equals(""))
             label.setText("Empty field!");
@@ -57,5 +57,11 @@ public class Transmission {
     public void transmit(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
         main.changeScene("enter.fxml");
+    }
+
+    public void back(ActionEvent actionEvent) throws Exception {
+        Main main = new Main();
+        main.changeScene("enter.fxml");
+        Main.out.writeUTF("back");
     }
 }

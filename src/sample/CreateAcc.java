@@ -42,24 +42,30 @@ public class CreateAcc implements Initializable {
         passwords = password.getText().toString();
         confirmPasswords = confirmPassword.getText().toString();
 
-        if (kinds.equals(""))
+        if (kinds.isEmpty())
             label.setText("Empty field!");
-
-        else if (aliass.equals(""))
+        else if (aliass.isEmpty())
             label.setText("Empty field!");
-
-        else if (passwords.equals(""))
+        else if (passwords.isEmpty())
             label.setText("Empty field!");
-
-        else if (confirmPasswords.equals(""))
+        else if (confirmPasswords.isEmpty())
             label.setText("Empty field!");
-
         else if (!(passwords.equals(confirmPasswords)))
             label.setText("Please make sure the password and confirmation are the same!");
 
         else {
             Main main = new Main();
-            main.changeScene("afterSignInButton.fxml");
+            main.changeScene("enter.fxml");
+            Main.out.writeUTF(kinds);
+            Main.out.writeUTF(passwords);
+            Main.out.writeUTF(aliass);
+            Main.out.writeUTF("enter");
         }
+    }
+
+    public void back(ActionEvent actionEvent) throws Exception {
+        Main main = new Main();
+        main.changeScene("afterSignUpButton.fxml");
+        Main.out.writeUTF("back");
     }
 }

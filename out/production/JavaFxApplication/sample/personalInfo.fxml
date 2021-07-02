@@ -82,7 +82,7 @@
                         </LinearGradient>
                     </stroke>
                 </Line>
-                <Button layoutX="21.0" layoutY="335.0" mnemonicParsing="false" onAction="#button" onMouseMoved="#button" prefHeight="231.0" prefWidth="458.0" style="-fx-background-color: #09094f;" />
+                <Button layoutX="21.0" layoutY="40.0" mnemonicParsing="false" onAction="#button" onMouseMoved="#button" prefHeight="526.0" prefWidth="458.0" style="-fx-background-color: #09094f;" />
                 <Label layoutX="55.0" layoutY="48.0" prefHeight="28.0" prefWidth="50.0" text="Name:">
                     <font>
                         <Font name="Niagara Solid" size="30.0" />
@@ -104,7 +104,7 @@
                         </LinearGradient>
                     </textFill>
                 </Label>
-                <Label layoutX="55.0" layoutY="82.0" text="International ID:">
+                <Label layoutX="55.0" layoutY="82.0" text="national ID:">
                     <font>
                         <Font name="Niagara Solid" size="30.0" />
                     </font>
@@ -125,7 +125,7 @@
                         </LinearGradient>
                     </textFill>
                 </Label>
-                <Label layoutX="55.0" layoutY="116.0" text="Email:">
+                <Label layoutX="58.0" layoutY="150.0" text="Email:">
                     <font>
                         <Font name="Niagara Solid" size="30.0" />
                     </font>
@@ -146,7 +146,7 @@
                         </LinearGradient>
                     </textFill>
                 </Label>
-                <Label layoutX="55.0" layoutY="150.0" text="Telephone:">
+                <Label layoutX="56.0" layoutY="116.0" text="Telephone:">
                     <font>
                         <Font name="Niagara Solid" size="30.0" />
                     </font>
@@ -272,7 +272,7 @@
                         </LinearGradient>
                     </textFill>
                 </Label>
-                <Label fx:id="email" layoutX="250.0" layoutY="116.0" prefHeight="18.0" prefWidth="215.0">
+                <Label fx:id="telephone" layoutX="250.0" layoutY="116.0" prefHeight="18.0" prefWidth="215.0">
                     <font>
                         <Font name="Niagara Solid" size="30.0" />
                     </font>
@@ -293,7 +293,7 @@
                         </LinearGradient>
                     </textFill>
                 </Label>
-                <Label fx:id="telephone" layoutX="250.0" layoutY="150.0" prefHeight="18.0" prefWidth="215.0">
+                <Label fx:id="email" layoutX="250.0" layoutY="150.0" prefHeight="18.0" prefWidth="215.0">
                     <font>
                         <Font name="Niagara Solid" size="30.0" />
                     </font>
@@ -377,12 +377,7 @@
                         </LinearGradient>
                     </textFill>
                 </Label>
-                <Button layoutX="205.0" layoutY="299.0" mnemonicParsing="false" onAction="#show" style="-fx-background-color: #ffd400;" text="show details" textFill="#09094f">
-                    <font>
-                        <Font name="Niagara Solid" size="20.0" />
-                    </font>
-                </Button>
-                <Label fx:id="b" layoutX="50.0" layoutY="345.0" prefHeight="34.0" prefWidth="97.0">
+                <Label fx:id="b" layoutX="52.0" layoutY="286.0" prefHeight="34.0" prefWidth="97.0" text="Balance:">
                     <font>
                         <Font name="Niagara Solid" size="30.0" />
                     </font>
@@ -403,17 +398,54 @@
                         </LinearGradient>
                     </textFill>
                 </Label>
-                <Label fx:id="balance" layoutX="250.0" layoutY="345.0" prefHeight="18.0" prefWidth="215.0">
+                <Label fx:id="balance" layoutX="250.0" layoutY="279.0" prefHeight="18.0" prefWidth="215.0">
                     <font>
                         <Font name="Niagara Solid" size="30.0" />
                     </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.8313725590705872" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
                 </Label>
-                <TextArea fx:id="transaction" layoutX="22.0" layoutY="399.0" prefHeight="104.0" prefWidth="452.0" text="hey&#10;hey'&#10;heyyy&#10;hey&#10;d&#10;d&#10;d&#10;d&#10;dd&#10;d&#10;d" visible="false" />
-                <Button layoutX="222.0" layoutY="530.0" mnemonicParsing="false" onAction="#done" style="-fx-background-color: #ffd400;" text="Done" textFill="#09094f">
+                <TextArea fx:id="transaction" layoutX="22.0" layoutY="331.0" prefHeight="172.0" prefWidth="452.0" />
+                <Button fx:id="done" layoutX="207.0" layoutY="519.0" mnemonicParsing="false" onAction="#done" prefHeight="36.0" prefWidth="82.0" style="-fx-background-color: #ffd400;" text="Done" textFill="#09094f">
                     <font>
-                        <Font name="Niagara Solid" size="20.0" />
+                        <Font name="Niagara Solid" size="25.0" />
                     </font>
                 </Button>
+            <Button layoutX="16.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #09094f;" text="Back">
+               <font>
+                  <Font name="Niagara Solid" size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.8313725590705872" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
             </children>
         </AnchorPane>
     </top>

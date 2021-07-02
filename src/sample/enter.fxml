@@ -228,32 +228,6 @@
                     </textFill>
                 </Label>
                 <ImageView fx:id="picture" fitHeight="81.0" fitWidth="94.0" layoutX="338.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
-                <Label fx:id="username" alignment="CENTER" layoutX="325.0" layoutY="107.0" prefHeight="27.0" prefWidth="119.0">
-                    <font>
-                        <Font name="Niagara Solid" size="24.0" />
-                    </font>
-                    <textFill>
-                        <LinearGradient endX="1.0" endY="1.0">
-                            <stops>
-                                <Stop>
-                                    <color>
-                                        <Color red="1.0" green="0.8313725590705872" />
-                                    </color>
-                                </Stop>
-                                <Stop offset="0.007633587786259542">
-                                    <color>
-                                        <Color red="1.0" green="0.8313725590705872" />
-                                    </color>
-                                </Stop>
-                                <Stop offset="1.0">
-                                    <color>
-                                        <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
-                                    </color>
-                                </Stop>
-                            </stops>
-                        </LinearGradient>
-                    </textFill>
-                </Label>
                 <Button fx:id="button" layoutX="24.0" layoutY="519.0" mnemonicParsing="false" onAction="#button" onMouseMoved="#button" prefHeight="62.0" prefWidth="456.0" style="-fx-background-color: #09094f;" />
             </children>
         </AnchorPane>

@@ -13,10 +13,12 @@ public class SignUpOrIn {
     public void signIn(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
         main.changeScene("afterSignInButton.fxml");
+//        Main.out.writeUTF("signIn");
     }
 
     public void signUp(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
-        main.changeScene("sample/afterSignUpButton.fxml");
+        main.changeScene("afterSignUpButton.fxml");
+        Main.out.writeUTF("signUp");
     }
 }
