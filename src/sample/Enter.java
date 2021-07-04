@@ -2,6 +2,7 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
@@ -9,6 +10,8 @@ import javafx.scene.image.ImageView;
 import java.io.IOException;
 
 public class Enter {
+    @FXML
+    Button button;
     @FXML
     Label alias;
     @FXML
@@ -28,10 +31,7 @@ public class Enter {
         Main.out.writeUTF("payment");
     }
 
-    public void loan(ActionEvent actionEvent) throws Exception {
-        Main main = new Main();
-        main.changeScene("loan.fxml");
-        Main.out.writeUTF("loan");
+    public void loan(ActionEvent actionEvent) {
     }
 
     public void logOut(ActionEvent actionEvent) throws Exception {
@@ -53,6 +53,8 @@ public class Enter {
     }
 
     public void button() throws IOException {
+        //Image image = new Image("D:\\Bank\\src\\sample\\account.png");
+        //picture.setImage(image);
         int i = 0;
         while (i < 2)
         {
@@ -62,5 +64,31 @@ public class Enter {
                 number.setText(Main.in.readUTF().toString());
             i++;
         }
+        button.setDisable(true);
     }
+
+   /* @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        //Image image = new Image("D:\\Bank\\src\\sample\\account.png");
+        //picture.setImage(image);
+        int i = 0;
+        while (i < 2)
+        {
+            if(i == 0) {
+                try {
+                    alias.setText(Main.in.readUTF().toString());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            else if(i == 1) {
+                try {
+                    number.setText(Main.in.readUTF().toString());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            i++;
+        }
+    } */
 }

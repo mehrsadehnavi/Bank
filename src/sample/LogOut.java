@@ -15,7 +15,7 @@ public class LogOut {
     Label label;
 
     static String passwords, destinations;
-    static int check = 0;
+    static int check = 0, clicked = 0;
 
     public void logOut(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
@@ -34,15 +34,20 @@ public class LogOut {
             main.changeScene("signUpOrIn.fxml");
         }
     }
+
     public void check(ActionEvent actionEvent) {
-        passwords = password.getText().toString();
-        destinations = destination.getText().toString();
-        check = 1;
+        clicked++;
+        if (clicked % 2 == 1) {
+            passwords = password.getText().toString();
+            destinations = destination.getText().toString();
+            check = 1;
+        } else
+            check = 0;
     }
 
     public void back(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
         main.changeScene("enter.fxml");
-        Main.out.writeUTF("back");
+        //Main.out.writeUTF("back");
     }
 }

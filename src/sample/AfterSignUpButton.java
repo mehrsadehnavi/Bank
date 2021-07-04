@@ -53,32 +53,43 @@ public class AfterSignUpButton {
         telephones = telephone.getText().toString();
         confirmPasswords = confirmPassword.getText().toString();
 
-        if (usernames.isEmpty())
+        if (usernames.isEmpty()) {
             label.setText("Empty field!");
+            Main.out.writeBoolean(false);
+        }
 
-        else if (emails.isEmpty())
+        else if (emails.isEmpty()) {
             label.setText("Empty field!");
+            Main.out.writeBoolean(false);
+        }
 
-        else if (passwords.isEmpty())
+        else if (passwords.isEmpty()) {
             label.setText("Empty field!");
+            Main.out.writeBoolean(false);
+        }
 
-        else if (confirmPasswords.isEmpty())
+        else if (confirmPasswords.isEmpty()) {
             label.setText("Empty field!");
+            Main.out.writeBoolean(false);
+        }
 
-        else if (nationals.isEmpty())
+        else if (nationals.isEmpty()) {
             label.setText("Empty field!");
+            Main.out.writeBoolean(false);
+        }
 
-        else if (telephones.isEmpty())
+        else if (telephones.isEmpty()) {
             label.setText("Empty field!");
+            Main.out.writeBoolean(false);
+        }
 
-        else if (!(password.getText().toString().equals(confirmPassword.getText().toString())))
+        else if (!(password.getText().toString().equals(confirmPassword.getText().toString()))) {
             label.setText("Please make sure the password and confirmation are the same!");
-
-       //else if (!(nationals.contains("0") || nationals.contains("1") || nationals.contains("2") || nationals.contains("3")|| nationals.contains("4") || nationals.contains("5") || nationals.contains("6") || nationals.contains("7") || nationals.contains("8") || nationals.contains("9"))){
-
-       // }
+            Main.out.writeBoolean(false);
+        }
 
         else {
+            Main.out.writeBoolean(true);
             Main main = new Main();
             main.changeScene("createAcc.fxml");
             Main.out.writeUTF(usernames);
@@ -86,13 +97,13 @@ public class AfterSignUpButton {
             Main.out.writeUTF(telephones);
             Main.out.writeUTF(emails);
             Main.out.writeUTF(passwords);
+            Main.out.writeUTF("createAccount");
         }
-        Main.out.writeUTF("createAccount");
     }
 
     public void back(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
         main.changeScene("signUpOrIn.fxml");
-        Main.out.writeUTF("back");
+        //Main.out.writeUTF("back");
     }
 }

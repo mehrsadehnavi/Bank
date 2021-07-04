@@ -26,7 +26,6 @@ public class CreateAcc implements Initializable {
 
     static String kinds, passwords, confirmPasswords, aliass;
 
-    MouseEvent mouseEvent;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -42,13 +41,13 @@ public class CreateAcc implements Initializable {
         passwords = password.getText().toString();
         confirmPasswords = confirmPassword.getText().toString();
 
-        if (kinds.isEmpty())
+        if (kinds.equals(""))
             label.setText("Empty field!");
-        else if (aliass.isEmpty())
+        else if (aliass.equals(""))
             label.setText("Empty field!");
-        else if (passwords.isEmpty())
+        else if (passwords.equals(""))
             label.setText("Empty field!");
-        else if (confirmPasswords.isEmpty())
+        else if (confirmPasswords.equals(""))
             label.setText("Empty field!");
         else if (!(passwords.equals(confirmPasswords)))
             label.setText("Please make sure the password and confirmation are the same!");
@@ -66,6 +65,6 @@ public class CreateAcc implements Initializable {
     public void back(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
         main.changeScene("afterSignUpButton.fxml");
-        Main.out.writeUTF("back");
+        //Main.out.writeUTF("back");
     }
 }

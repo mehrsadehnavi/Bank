@@ -10,6 +10,8 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 
+import java.io.IOException;
+
 public class Transmission {
     @FXML
     Button search;
@@ -36,32 +38,43 @@ public class Transmission {
 
     static String destinations, amounts;
 
-    public void search(ActionEvent actionEvent) {
+    public void search(ActionEvent actionEvent) throws IOException {
         destinations = destination.getText().toString();
         amounts = amount.getText().toString();
-        if (destinations.isEmpty())
+
+        Main.out.writeUTF("search");
+        Main.out.writeUTF(destinations);
+        Main.out.writeUTF(amounts);
+
+        if (destinations.equals(""))
             label.setText("Empty field!");
         else if (amounts.equals(""))
             label.setText("Empty field!");
+        else if(!(Main.in.readBoolean()))
+            label.setText("Invalid destination number!");
         else {
-            ba.setText("balance after transmission:");
-            an.setText("account's number:");
+            an.setText("account's username:");
             al.setText("alias:");
-            //balanceAfter.setText();
-            //number.setText();
-            //alias.setText();
+            alias.setText(Main.in.readUTF());
+            number.setText(Main.in.readUTF());
             transmit.setVisible(true);
         }
     }
 
     public void transmit(ActionEvent actionEvent) throws Exception {
-        Main main = new Main();
-        main.changeScene("enter.fxml");
+        Main.out.writeUTF("transmit");
+        if(!(Main.in.readBoolean()))
+            label.setText("Insufficient balance!");
+        else
+        {
+            Main main = new Main();
+            main.changeScene("enter.fxml");
+        }
     }
 
     public void back(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
         main.changeScene("enter.fxml");
-        Main.out.writeUTF("back");
+        //Main.out.writeUTF("back");
     }
 }

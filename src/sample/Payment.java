@@ -6,8 +6,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-import java.awt.*;
-
 public class Payment {
     @FXML
     Label baf;
@@ -36,6 +34,6 @@ public class Payment {
     public void back(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
         main.changeScene("enter.fxml");
-        Main.out.writeUTF("back");
+        //Main.out.writeUTF("back");
     }
 }

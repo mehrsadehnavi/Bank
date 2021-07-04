@@ -32,6 +32,7 @@ public class Loan implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        payBack.setValue("");
         payBack.getItems().add("one month");
         payBack.getItems().add("three month");
         payBack.getItems().add("six month");
@@ -67,6 +68,6 @@ public class Loan implements Initializable {
     public void back(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
         main.changeScene("enter.fxml");
-        Main.out.writeUTF("back");
+        //Main.out.writeUTF("back");
     }
 }

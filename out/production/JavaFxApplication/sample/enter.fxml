@@ -228,7 +228,6 @@
                     </textFill>
                 </Label>
                 <ImageView fx:id="picture" fitHeight="81.0" fitWidth="94.0" layoutX="338.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
-                <Button fx:id="button" layoutX="24.0" layoutY="519.0" mnemonicParsing="false" onAction="#button" onMouseMoved="#button" prefHeight="62.0" prefWidth="456.0" style="-fx-background-color: #09094f;" />
             </children>
         </AnchorPane>
     </center>
