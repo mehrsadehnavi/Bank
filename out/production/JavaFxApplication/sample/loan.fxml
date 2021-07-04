@@ -151,54 +151,7 @@
                     </textFill>
                 </Label>
                 <ChoiceBox fx:id="payBack" layoutX="173.0" layoutY="286.0" prefWidth="150.0" style="-fx-background-color: #baaa61;" />
-                <Label fx:id="balance" layoutX="86.0" layoutY="389.0" prefHeight="18.0" prefWidth="173.0">
-                    <font>
-                        <Font name="Niagara Solid" size="30.0" />
-                    </font>
-                    <textFill>
-                        <LinearGradient endX="1.0" endY="1.0">
-                            <stops>
-                                <Stop>
-                                    <color>
-                                        <Color red="1.0" green="0.8313725590705872" />
-                                    </color>
-                                </Stop>
-                                <Stop offset="1.0">
-                                    <color>
-                                        <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
-                                    </color>
-                                </Stop>
-                            </stops>
-                        </LinearGradient>
-                    </textFill>
-                </Label>
-                <Button fx:id="calculate" layoutX="174.0" layoutY="383.0" mnemonicParsing="false" onAction="#calculate" prefHeight="46.0" prefWidth="147.0" style="-fx-background-color: #ffd400;" text="calculate" textFill="#09094f">
-                    <font>
-                        <Font name="Niagara Solid" size="25.0" />
-                    </font>
-                </Button>
-                <Label fx:id="baf" layoutX="293.0" layoutY="389.0" prefHeight="18.0" prefWidth="124.0">
-                    <font>
-                        <Font name="Niagara Solid" size="30.0" />
-                    </font>
-                    <textFill>
-                        <LinearGradient endX="1.0" endY="1.0">
-                            <stops>
-                                <Stop>
-                                    <color>
-                                        <Color red="1.0" green="0.8313725590705872" />
-                                    </color>
-                                </Stop>
-                                <Stop offset="1.0">
-                                    <color>
-                                        <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
-                                    </color>
-                                </Stop>
-                            </stops>
-                        </LinearGradient>
-                    </textFill>
-                </Label>
-                <Button fx:id="done" layoutX="193.0" layoutY="497.0" mnemonicParsing="false" onAction="#done" prefHeight="46.0" prefWidth="109.0" style="-fx-background-color: #ffd400;" text="Done" textFill="#09094f" visible="false">
+                <Button fx:id="done" layoutX="193.0" layoutY="497.0" mnemonicParsing="false" onAction="#done" prefHeight="46.0" prefWidth="109.0" style="-fx-background-color: #ffd400;" text="Request" textFill="#09094f">
                     <font>
                         <Font name="Niagara Solid" size="25.0" />
                     </font>

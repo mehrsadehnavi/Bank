@@ -21,11 +21,11 @@ public class Main extends Application {
         stage = primaryStage;
         primaryStage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource("signUpOrIn.fxml"));
-        socket = new Socket("localhost", 123);
-        inputStream = socket.getInputStream();
-        outputStream = socket.getOutputStream();
-        in = new DataInputStream(inputStream);
-        out = new DataOutputStream(outputStream);
+        //socket = new Socket("localhost", 123);
+        //inputStream = socket.getInputStream();
+        //outputStream = socket.getOutputStream();
+        //in = new DataInputStream(inputStream);
+        //out = new DataOutputStream(outputStream);
 
         Scene scene = new Scene(root,500,600);
         scene.getStylesheets().add("sample/color.css");

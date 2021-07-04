@@ -55,10 +55,10 @@ public class CreateAcc implements Initializable {
         else {
             Main main = new Main();
             main.changeScene("enter.fxml");
-            Main.out.writeUTF(kinds);
-            Main.out.writeUTF(passwords);
-            Main.out.writeUTF(aliass);
-            Main.out.writeUTF("enter");
+//            Main.out.writeUTF(kinds);
+ //           Main.out.writeUTF(passwords);
+ //           Main.out.writeUTF(aliass);
+  //          Main.out.writeUTF("enter");
         }
     }
 

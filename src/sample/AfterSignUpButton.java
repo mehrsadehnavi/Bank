@@ -89,15 +89,15 @@ public class AfterSignUpButton {
         }
 
         else {
-            Main.out.writeBoolean(true);
+            //Main.out.writeBoolean(true);
             Main main = new Main();
             main.changeScene("createAcc.fxml");
-            Main.out.writeUTF(usernames);
-            Main.out.writeUTF(nationals);
-            Main.out.writeUTF(telephones);
-            Main.out.writeUTF(emails);
-            Main.out.writeUTF(passwords);
-            Main.out.writeUTF("createAccount");
+            //Main.out.writeUTF(usernames);
+            //Main.out.writeUTF(nationals);
+            //Main.out.writeUTF(telephones);
+            //Main.out.writeUTF(emails);
+            //Main.out.writeUTF(passwords);
+            //Main.out.writeUTF("createAccount");
         }
     }
 
