@@ -26,7 +26,6 @@ public class CreateAcc implements Initializable {
 
     static String kinds, passwords, confirmPasswords, aliass;
 
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         kind.getItems().add("Current");
@@ -36,6 +35,7 @@ public class CreateAcc implements Initializable {
     }
 
     public void continueButton(ActionEvent actionEvent) throws Exception {
+
         kinds = kind.getValue().toString();
         aliass = alias.getText().toString();
         passwords = password.getText().toString();

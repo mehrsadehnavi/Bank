@@ -211,43 +211,43 @@
                     <font>
                         <Font name="Bodoni MT Black" size="15.0" />
                     </font>
-               <textFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="1.0" green="0.8313725590705872" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </textFill>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="1.0" green="0.8313725590705872" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
                 </Label>
                 <Label fx:id="alias" layoutX="275.0" layoutY="423.0" prefHeight="26.0" prefWidth="200.0">
                     <font>
                         <Font name="Bodoni MT Black" size="15.0" />
                     </font>
-               <textFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="1.0" green="0.8313725590705872" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </textFill>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="1.0" green="0.8313725590705872" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
                 </Label>
                 <Button fx:id="transmit" alignment="CENTER" layoutX="208.0" layoutY="516.0" mnemonicParsing="false" onAction="#transmit" style="-fx-background-color: #ffd400;" text="transmit" textFill="#09094f" visible="false">
                     <font>
@@ -258,27 +258,27 @@
                     <font>
                         <Font name="Niagara Solid" size="25.0" />
                     </font></Label>
-            <Button layoutX="16.0" layoutY="18.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #09094f;" text="Back">
-               <font>
-                  <Font name="Niagara Solid" size="20.0" />
-               </font>
-               <textFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="1.0" green="0.8313725590705872" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </textFill>
-            </Button>
+                <Button layoutX="16.0" layoutY="18.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #09094f;" text="Back">
+                    <font>
+                        <Font name="Niagara Solid" size="20.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="1.0" green="0.8313725590705872" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
             </children>
         </AnchorPane>
     </left>

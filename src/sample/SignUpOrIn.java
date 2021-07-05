@@ -21,9 +21,9 @@ public class SignUpOrIn {
         main.changeScene("afterSignUpButton.fxml");
         Main.out.writeUTF("signUp");
     }
-
     public void exit(ActionEvent actionEvent) {
         Main main = new Main();
         main.exit();
     }
 }
+

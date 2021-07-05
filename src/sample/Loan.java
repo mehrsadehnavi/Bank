@@ -16,6 +16,12 @@ public class Loan implements Initializable {
     @FXML
     TextField amount;
     @FXML
+    Label baf;
+    @FXML
+    Label balance;
+    @FXML
+    Button calculate;
+    @FXML
     Button done;
     @FXML
     ChoiceBox payBack;

@@ -119,11 +119,11 @@
                         </RadialGradient>
                     </textFill>
                 </Label>
-            <Button layoutX="164.0" layoutY="452.0" mnemonicParsing="false" onAction="#exit" prefHeight="70.0" prefWidth="160.0" style="-fx-background-color: #ed614b;" text="Exit" textFill="#09094f">
-               <font>
-                  <Font name="Niagara Solid" size="33.0" />
-               </font>
-            </Button>
+                <Button layoutX="164.0" layoutY="452.0" mnemonicParsing="false" onAction="#exit" prefHeight="70.0" prefWidth="160.0" style="-fx-background-color: #ed614b;" text="Exit" textFill="#09094f">
+                    <font>
+                        <Font name="Niagara Solid" size="33.0" />
+                    </font>
+                </Button>
             </children></AnchorPane>
     </center>
 </BorderPane>

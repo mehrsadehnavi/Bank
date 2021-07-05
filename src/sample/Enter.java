@@ -60,8 +60,8 @@ public class Enter {
         Main.out.writeUTF("createAccount");
     }
 
-     public void button() throws Exception {
-        picture.setImage(new Image(new File("D:\\Bank\\src\\sample\\ax.png").toURI().toString()));
+    public void button() throws Exception {
+        picture.setImage(new Image(new File("C:\\Users\\amirhosein\\IdeaProjects\\Bank\\src\\photos\\ax.png").toURI().toString()));
         int i = 0;
         while (i < 2)
         {
@@ -73,33 +73,8 @@ public class Enter {
         }
         button.setDisable(true);
     }
-
     public void exit(ActionEvent actionEvent) {
         Main main = new Main();
         main.exit();
     }
-
-    /* @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        picture.setImage(new Image(new File("D:\\Bank\\src\\sample\\ax.png").toURI().toString()));
-        int i = 0;
-        while (i < 2)
-        {
-            if(i == 0) {
-                try {
-                    alias.setText(Main.in.readUTF().toString());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            else if(i == 1) {
-                try {
-                    number.setText(Main.in.readUTF().toString());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            i++;
-        }
-    } */
 }

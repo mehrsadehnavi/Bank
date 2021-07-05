@@ -64,86 +64,9 @@ public class PersonalInfo {
         button.setDisable(true);
     }
 
-    public void done(ActionEvent actionEvent) throws Exception {
-        Main main = new Main();
-        main.changeScene("enter.fxml");
-    }
-
     public void back(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
         main.changeScene("enter.fxml");
         Main.out.writeUTF("back");
     }
-
-    /* @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        transaction.setEditable(false);
-
-        int i = 0;
-        while (i < 4)
-        {
-            if(i == 0) {
-                try {
-                    name.setText(Main.in.readUTF().toString());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            else if(i == 1) {
-                try {
-                    national.setText(Main.in.readUTF().toString());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            else if(i == 2) {
-                try {
-                    telephone.setText(Main.in.readUTF().toString());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            else if(i == 3) {
-                try {
-                    email.setText(Main.in.readUTF().toString());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            i++;
-        }
-        i = 0;
-        while (i < 4)
-        {
-            if(i == 0) {
-                try {
-                    alias.setText(Main.in.readUTF().toString());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            else if(i == 1) {
-                try {
-                    accNo.setText(Main.in.readUTF().toString());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            else if(i == 2) {
-                try {
-                    kind.setText(Main.in.readUTF().toString());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            else if(i == 3) {
-                try {
-                    balance.setText(Main.in.readUTF().toString());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            i++;
-        }
-    } */
 }

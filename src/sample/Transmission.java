@@ -39,32 +39,47 @@ public class Transmission {
     static String destinations, amounts;
 
     public void search(ActionEvent actionEvent) throws IOException {
+        label.setText("");
+        Main.out.writeUTF("search");
+
         destinations = destination.getText().toString();
         amounts = amount.getText().toString();
 
-        Main.out.writeUTF("search");
         Main.out.writeUTF(destinations);
         Main.out.writeUTF(amounts);
 
         if (destinations.equals(""))
+        {
             label.setText("Empty field!");
+            Main.out.writeBoolean(false);
+        }
         else if (amounts.equals(""))
+        {
             label.setText("Empty field!");
-        else if(!(Main.in.readBoolean()))
-            label.setText("Invalid destination number!");
+            Main.out.writeBoolean(false);
+        }
         else {
-            an.setText("account's username:");
-            al.setText("alias:");
-            alias.setText(Main.in.readUTF());
-            number.setText(Main.in.readUTF());
-            transmit.setVisible(true);
+            Main.out.writeBoolean(true);
+            if(!(Main.in.readBoolean()))
+                label.setText("Invalid destination number!");
+            else
+            {
+                transmit.setVisible(true);
+                System.out.println(-2);
+                search.setVisible(false);
+                an.setText("account's username:");
+                al.setText("alias:");
+                alias.setText(Main.in.readUTF());
+                number.setText(Main.in.readUTF());
+            }
         }
     }
-
     public void transmit(ActionEvent actionEvent) throws Exception {
+        System.out.println(-1);
         Main.out.writeUTF("transmit");
-
-        if(!(Main.in.readBoolean())) {
+        if(!(Main.in.readBoolean()))
+        {
+            System.out.println(0);
             label.setText("Insufficient balance!");
             transmit.setVisible(false);
             number.setText("");
@@ -72,16 +87,16 @@ public class Transmission {
             al.setText("");
             an.setText("");
         }
-
-        else {
+        else
+        {
             Main main = new Main();
             main.changeScene("enter.fxml");
         }
     }
-
     public void back(ActionEvent actionEvent) throws Exception {
+        System.out.println(1);
+        Main.out.writeUTF("back");
         Main main = new Main();
         main.changeScene("enter.fxml");
-        Main.out.writeUTF("back");
     }
 }

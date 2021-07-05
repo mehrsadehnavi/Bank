@@ -20,30 +20,33 @@ public class LogIn {
     static String aliass, passwords;
 
     public void continueButton(ActionEvent actionEvent) throws Exception {
+        Main.out.writeUTF("continue");
         aliass = alias.getText().toString();
         passwords = password.getText().toString();
         Main.out.writeUTF(aliass);
         Main.out.writeUTF(passwords);
-
         if (aliass.equals(""))
             label.setText("Empty field!");
-
         else if (passwords.equals(""))
             label.setText("Empty field!");
-
-        else if (!(Main.in.readBoolean())) {
+        else if (!(Main.in.readBoolean()))
+        {
             label.setText("Please make sure the alias or the password are correct!");
         }
-
-        else {
+        else
+        {
             Main main = new Main();
             main.changeScene("enter.fxml");
         }
     }
-
     public void back(ActionEvent actionEvent) throws Exception {
+        Main.out.writeUTF("back");
         Main main = new Main();
         main.changeScene("signUpOrIn.fxml");
-        Main.out.writeUTF("back");
+    }
+    public void mostUsed(ActionEvent actionEvent) throws Exception {
+        Main.out.writeUTF("most");
+        Main main = new Main();
+        main.changeScene("enter.fxml");
     }
 }

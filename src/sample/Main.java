@@ -21,15 +21,13 @@ public class Main extends Application {
         stage = primaryStage;
         primaryStage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource("signUpOrIn.fxml"));
-        //socket = new Socket("localhost", 123);
-        //inputStream = socket.getInputStream();
-        //outputStream = socket.getOutputStream();
-        //in = new DataInputStream(inputStream);
-        //out = new DataOutputStream(outputStream);
-
-        Scene scene = new Scene(root,500,600);
-        scene.getStylesheets().add("sample/color.css");
-        primaryStage.setScene(scene);
+        socket = new Socket("localhost", 123);
+        inputStream = socket.getInputStream();
+        outputStream = socket.getOutputStream();
+        in = new DataInputStream(inputStream);
+        out = new DataOutputStream(outputStream);
+        primaryStage.setScene(new Scene(root, 500, 600));
+        //primaryStage.setTitle("");
         primaryStage.show();
     }
 
@@ -37,12 +35,9 @@ public class Main extends Application {
         Parent pane = FXMLLoader.load(getClass().getResource(fxml));
         stage.getScene().setRoot(pane);
     }
-
     public void exit() {
         stage.close();
     }
-
-
     public static void main(String[] args) {
         launch(args);
     }

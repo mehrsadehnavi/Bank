@@ -87,7 +87,7 @@
                         </LinearGradient>
                     </stroke>
                 </Line>
-                <Label alignment="CENTER" layoutX="49.0" layoutY="94.0" prefHeight="43.0" prefWidth="398.0" text="Please enter your username and password.">
+                <Label alignment="CENTER" layoutX="43.0" layoutY="132.0" prefHeight="43.0" prefWidth="413.0" text="Please enter your username">
                     <textFill>
                         <LinearGradient endX="1.0" endY="1.0">
                             <stops>
@@ -105,33 +105,12 @@
                         </LinearGradient>
                     </textFill>
                     <font>
-                        <Font name="Niagara Solid" size="38.0" />
+                        <Font name="Calisto MT Bold" size="30.0" />
                     </font>
                 </Label>
-                <Label layoutX="64.0" layoutY="279.0" prefHeight="18.0" prefWidth="153.0" text="national ID:">
+                <Label layoutX="42.0" layoutY="283.0" prefHeight="18.0" prefWidth="153.0" text="National ID:">
                     <font>
-                        <Font name="Niagara Solid" size="30.0" />
-                    </font>
-                    <textFill>
-                        <LinearGradient endX="1.0" endY="1.0">
-                            <stops>
-                                <Stop>
-                                    <color>
-                                        <Color red="1.0" green="0.8313725590705872" />
-                                    </color>
-                                </Stop>
-                                <Stop offset="1.0">
-                                    <color>
-                                        <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
-                                    </color>
-                                </Stop>
-                            </stops>
-                        </LinearGradient>
-                    </textFill>
-                </Label>
-                <Label layoutX="64.0" layoutY="378.0" prefHeight="18.0" prefWidth="153.0" text="password:">
-                    <font>
-                        <Font name="Niagara Solid" size="30.0" />
+                        <Font name="Calisto MT Bold" size="22.0" />
                     </font>
                     <textFill>
                         <LinearGradient endX="1.0" endY="1.0">
@@ -150,26 +129,68 @@
                         </LinearGradient>
                     </textFill>
                 </Label>
-                <TextField fx:id="national" layoutX="150.0" layoutY="284.0" prefHeight="26.0" prefWidth="290.0" style="-fx-background-color: #baaa61;">
+                <Label layoutX="42.0" layoutY="380.0" prefHeight="30.0" prefWidth="114.0" text="Password:">
                     <font>
-                        <Font name="Bodoni MT Black" size="12.0" />
+                        <Font name="Calisto MT Bold" size="22.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="1.0" green="0.8313725590705872" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Label>
+                <TextField fx:id="national" layoutX="174.0" layoutY="284.0" prefHeight="26.0" prefWidth="266.0" style="-fx-background-color: #baaa61;">
+                    <font>
+                        <Font name="Calisto MT" size="10.0" />
                     </font></TextField>
-                <Button fx:id="continueButton" layoutX="206.0" layoutY="499.0" mnemonicParsing="false" onAction="#continueButton" prefHeight="47.0" prefWidth="103.0" style="-fx-background-color: #ffd400;" text="continue" textFill="#09094f">
+                <Button fx:id="continueButton" alignment="CENTER" layoutX="170.0" layoutY="510.0" mnemonicParsing="false" onAction="#continueButton" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: #ffd400;" text="Continue" textFill="#09094f">
                     <font>
-                        <Font name="Niagara Solid" size="26.0" />
+                        <Font name="Calisto MT Bold" size="25.0" />
                     </font>
                 </Button>
-                <Label fx:id="label" alignment="CENTER" layoutX="58.0" layoutY="22.0" prefHeight="18.0" prefWidth="380.0" textFill="#eb604b">
+                <Label fx:id="label" alignment="CENTER" layoutX="100.0" layoutY="22.0" prefHeight="28.0" prefWidth="300.0" textFill="#eb604b">
                     <font>
-                        <Font name="Niagara Solid" size="25.0" />
+                        <Font name="Calisto MT Bold" size="15.0" />
                     </font></Label>
-                <PasswordField fx:id="password" layoutX="150.0" layoutY="381.0" prefHeight="26.0" prefWidth="290.0" style="-fx-background-color: #baaa61;">
+                <PasswordField fx:id="password" layoutX="174.0" layoutY="381.0" prefHeight="26.0" prefWidth="266.0" style="-fx-background-color: #baaa61;">
                     <font>
-                        <Font name="Bodoni MT Black" size="12.0" />
+                        <Font name="Calisto MT" size="10.0" />
                     </font></PasswordField>
-            <Button layoutX="16.0" layoutY="18.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #09094f;" text="Back">
+                <Button layoutX="16.0" layoutY="18.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #09094f;" text="Back">
+                    <font>
+                        <Font name="Calisto MT Bold" size="22.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="1.0" green="0.8313725590705872" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Button>
+            <Label alignment="CENTER" layoutX="152.0" layoutY="175.0" text="and password.">
                <font>
-                  <Font name="Niagara Solid" size="20.0" />
+                  <Font name="Calisto MT Bold" size="30.0" />
                </font>
                <textFill>
                   <LinearGradient endX="1.0" endY="1.0">
@@ -187,7 +208,7 @@
                      </stops>
                   </LinearGradient>
                </textFill>
-            </Button>
+            </Label>
             </children>
         </AnchorPane>
     </left>

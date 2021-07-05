@@ -28,36 +28,51 @@ public class Payment {
 
     public void search(ActionEvent actionEvent) throws Exception {
         bills = bill.getText().toString();
-
+        Main.out.writeUTF("search");
         if (bills.isEmpty()){
             label.setText("Empty field!");
             Main.out.writeBoolean(false);
         }
-
         else {
-            money.setVisible(true);
-           // money.setText("");
-            amount.setVisible(true);
-            pay.setVisible(true);
-            if (Main.in.readUTF().equals("ab"))
-                view.setImage(new Image(new File("D:\\Bank\\src\\sample\\ab.png").toURI().toString()));
-            else if (Main.in.readUTF().equals("gaz"))
-                view.setImage(new Image(new File("D:\\Bank\\src\\sample\\gaz.png").toURI().toString()));
-            else if (Main.in.readUTF().equals("bargh"))
-                view.setImage(new Image(new File("D:\\Bank\\src\\sample\\bargh.png").toURI().toString()));
-            else if (Main.in.readUTF().equals("mokhaberat"))
-                view.setImage(new Image(new File("D:\\Bank\\src\\sample\\mokhaberat.png").toURI().toString()));
+            Main.out.writeBoolean(true);
+            Main.out.writeUTF(bills);
+            if(Main.in.readBoolean())
+            {
+                money.setVisible(true);
+                money.setText(Main.in.readUTF());
+                amount.setVisible(true);
+                pay.setVisible(true);
+                String serverRequest = Main.in.readUTF();
+                if (serverRequest.equals("ab"))
+                    view.setImage(new Image(new File("C:\\Users\\amirhosein\\IdeaProjects\\Bank\\src\\photos\\ab.png").toURI().toString()));
+                else if (serverRequest.equals("gaz"))
+                    view.setImage(new Image(new File("C:\\Users\\amirhosein\\IdeaProjects\\Bank\\src\\photos\\gaz.png").toURI().toString()));
+                else if (serverRequest.equals("bargh"))
+                    view.setImage(new Image(new File("C:\\Users\\amirhosein\\IdeaProjects\\Bank\\src\\photos\\bargh.png").toURI().toString()));
+                else if (serverRequest.equals("mokhaberat"))
+                    view.setImage(new Image(new File("C:\\Users\\amirhosein\\IdeaProjects\\Bank\\src\\photos\\mokhaberat.png").toURI().toString()));
+            }
+            else
+                label.setText("Invalid bill number!");
         }
     }
 
     public void pay(ActionEvent actionEvent) throws Exception {
-        //تو فایل از حساب کم بشه
-        Main main = new Main();
-        main.changeScene("enter.fxml");
         Main.out.writeUTF("pay");
+        if(Main.in.readBoolean())
+        {
+            Main main = new Main();
+            main.changeScene("enter.fxml");
+        }
+        else
+        {
+            label.setText("Insufficient balance!");
+            pay.setVisible(false);
+        }
     }
 
     public void back(ActionEvent actionEvent) throws Exception {
+
         Main main = new Main();
         main.changeScene("enter.fxml");
         Main.out.writeUTF("back");

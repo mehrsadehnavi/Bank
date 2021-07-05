@@ -93,118 +93,118 @@
                         </LinearGradient>
                     </stroke>
                 </Line>
-            <Button fx:id="button" layoutX="23.0" layoutY="24.0" mnemonicParsing="false" onMouseMoved="#button" prefHeight="554.0" prefWidth="454.0" style="-fx-background-color: #09094f;" />
-            <Button fx:id="personal" layoutX="57.0" layoutY="132.0" mnemonicParsing="false" onAction="#personal" prefHeight="10.0" prefWidth="390.0" style="-fx-background-color: #ed614b;" text="information" textFill="#09094f">
-               <font>
-                  <Font name="Niagara Solid" size="30.0" />
-               </font></Button>
-            <Button fx:id="acc" layoutX="57.0" layoutY="193.0" mnemonicParsing="false" onAction="#acc" prefHeight="10.0" prefWidth="390.0" style="-fx-background-color: #ffd400;" text="new account" textFill="#09094f">
-               <font>
-                  <Font name="Niagara Solid" size="30.0" />
-               </font></Button>
-            <Button fx:id="payment" layoutX="57.0" layoutY="253.0" mnemonicParsing="false" onAction="#payment" prefHeight="10.0" prefWidth="390.0" style="-fx-background-color: #ed614b;" text="payment" textFill="#09094f">
-               <font>
-                  <Font name="Niagara Solid" size="30.0" />
-               </font></Button>
-            <Button fx:id="transmission" layoutX="57.0" layoutY="314.0" mnemonicParsing="false" onAction="#transmission" prefHeight="10.0" prefWidth="390.0" style="-fx-background-color: #ffd400;" text="transmission" textFill="#09094f">
-               <font>
-                  <Font name="Niagara Solid" size="30.0" />
-               </font></Button>
-            <Button fx:id="loan" layoutX="57.0" layoutY="375.0" mnemonicParsing="false" onAction="#loan" prefHeight="10.0" prefWidth="390.0" style="-fx-background-color: #ed614b;" text="loan" textFill="#09094f">
-               <font>
-                  <Font name="Niagara Solid" size="30.0" />
-               </font></Button>
-            <Button fx:id="logOut" layoutX="57.0" layoutY="436.0" mnemonicParsing="false" onAction="#logOut" prefHeight="10.0" prefWidth="390.0" style="-fx-background-color: #ffd400;" text="log out" textFill="#09094f">
-               <font>
-                  <Font name="Niagara Solid" size="30.0" />
-               </font></Button>
-            <ImageView fx:id="picture" fitHeight="81.0" fitWidth="94.0" layoutX="375.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" />
-            <Label layoutX="56.0" layoutY="54.0" text="account alias:">
-               <font>
-                  <Font name="Niagara Solid" size="24.0" />
-               </font>
-               <textFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="1.0" green="0.8313725590705872" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </textFill></Label>
-            <Label layoutX="56.0" layoutY="94.0" text="account number:">
-               <textFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="1.0" green="0.8313725590705872" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </textFill>
-               <font>
-                  <Font name="Niagara Solid" size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="alias" layoutX="159.0" layoutY="54.0" prefHeight="27.0" prefWidth="157.0">
-               <textFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="1.0" green="0.8313725590705872" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </textFill>
-               <font>
-                  <Font name="Niagara Solid" size="24.0" />
-               </font></Label>
-            <Label fx:id="number" layoutX="159.0" layoutY="94.0" prefHeight="27.0" prefWidth="157.0">
-               <font>
-                  <Font name="Niagara Solid" size="24.0" />
-               </font>
-               <textFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="1.0" green="0.8313725590705872" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </textFill></Label>
-            <Button fx:id="exit" layoutX="57.0" layoutY="497.0" mnemonicParsing="false" onAction="#exit" prefHeight="10.0" prefWidth="390.0" style="-fx-background-color: #ed614b;" text="exit" textFill="#09094f">
-               <font>
-                  <Font name="Niagara Solid" size="30.0" />
-               </font>
-            </Button>
+                <Button fx:id="button" layoutX="23.0" layoutY="24.0" mnemonicParsing="false" onMouseMoved="#button" prefHeight="554.0" prefWidth="454.0" style="-fx-background-color: #09094f;" />
+                <Button fx:id="personal" layoutX="57.0" layoutY="132.0" mnemonicParsing="false" onAction="#personal" prefHeight="10.0" prefWidth="390.0" style="-fx-background-color: #ed614b;" text="information" textFill="#09094f">
+                    <font>
+                        <Font name="Niagara Solid" size="30.0" />
+                    </font></Button>
+                <Button fx:id="acc" layoutX="57.0" layoutY="193.0" mnemonicParsing="false" onAction="#acc" prefHeight="10.0" prefWidth="390.0" style="-fx-background-color: #ffd400;" text="new account" textFill="#09094f">
+                    <font>
+                        <Font name="Niagara Solid" size="30.0" />
+                    </font></Button>
+                <Button fx:id="payment" layoutX="57.0" layoutY="253.0" mnemonicParsing="false" onAction="#payment" prefHeight="10.0" prefWidth="390.0" style="-fx-background-color: #ed614b;" text="payment" textFill="#09094f">
+                    <font>
+                        <Font name="Niagara Solid" size="30.0" />
+                    </font></Button>
+                <Button fx:id="transmission" layoutX="57.0" layoutY="314.0" mnemonicParsing="false" onAction="#transmission" prefHeight="10.0" prefWidth="390.0" style="-fx-background-color: #ffd400;" text="transmission" textFill="#09094f">
+                    <font>
+                        <Font name="Niagara Solid" size="30.0" />
+                    </font></Button>
+                <Button fx:id="loan" layoutX="57.0" layoutY="375.0" mnemonicParsing="false" onAction="#loan" prefHeight="10.0" prefWidth="390.0" style="-fx-background-color: #ed614b;" text="loan" textFill="#09094f">
+                    <font>
+                        <Font name="Niagara Solid" size="30.0" />
+                    </font></Button>
+                <Button fx:id="logOut" layoutX="57.0" layoutY="436.0" mnemonicParsing="false" onAction="#logOut" prefHeight="10.0" prefWidth="390.0" style="-fx-background-color: #ffd400;" text="log out" textFill="#09094f">
+                    <font>
+                        <Font name="Niagara Solid" size="30.0" />
+                    </font></Button>
+                <ImageView fx:id="picture" fitHeight="81.0" fitWidth="94.0" layoutX="375.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" />
+                <Label layoutX="56.0" layoutY="54.0" text="account alias:">
+                    <font>
+                        <Font name="Niagara Solid" size="24.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="1.0" green="0.8313725590705872" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill></Label>
+                <Label layoutX="56.0" layoutY="94.0" text="account number:">
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="1.0" green="0.8313725590705872" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                    <font>
+                        <Font name="Niagara Solid" size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="alias" layoutX="159.0" layoutY="54.0" prefHeight="27.0" prefWidth="157.0">
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="1.0" green="0.8313725590705872" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                    <font>
+                        <Font name="Niagara Solid" size="24.0" />
+                    </font></Label>
+                <Label fx:id="number" layoutX="159.0" layoutY="94.0" prefHeight="27.0" prefWidth="157.0">
+                    <font>
+                        <Font name="Niagara Solid" size="24.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="1.0" green="0.8313725590705872" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill></Label>
+                <Button fx:id="exit" layoutX="57.0" layoutY="497.0" mnemonicParsing="false" onAction="#exit" prefHeight="10.0" prefWidth="390.0" style="-fx-background-color: #ed614b;" text="exit" textFill="#09094f">
+                    <font>
+                        <Font name="Niagara Solid" size="30.0" />
+                    </font>
+                </Button>
             </children>
         </AnchorPane>
     </center>
