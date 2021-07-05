@@ -33,10 +33,13 @@ public class Enter {
     public void payment(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
         main.changeScene("payment.fxml");
-        //Main.out.writeUTF("payment");
+        Main.out.writeUTF("payment");
     }
 
-    public void loan(ActionEvent actionEvent) {
+    public void loan(ActionEvent actionEvent) throws Exception {
+        Main main = new Main();
+        main.changeScene("loan.fxml");
+        Main.out.writeUTF("loan");
     }
 
     public void logOut(ActionEvent actionEvent) throws Exception {
@@ -69,6 +72,11 @@ public class Enter {
             i++;
         }
         button.setDisable(true);
+    }
+
+    public void exit(ActionEvent actionEvent) {
+        Main main = new Main();
+        main.exit();
     }
 
     /* @Override

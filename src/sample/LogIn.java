@@ -38,13 +38,12 @@ public class LogIn {
         else {
             Main main = new Main();
             main.changeScene("enter.fxml");
-            Main.out.writeUTF("enter");
         }
     }
 
     public void back(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
         main.changeScene("signUpOrIn.fxml");
-        //Main.out.writeUTF("back");
+        Main.out.writeUTF("back");
     }
 }

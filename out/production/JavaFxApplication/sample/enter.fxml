@@ -108,7 +108,7 @@
                         <Font name="Niagara Solid" size="30.0" />
                     </font>
                 </Button>
-                <Button fx:id="logOut" layoutX="54.0" layoutY="457.0" mnemonicParsing="false" onAction="#logOut" prefHeight="10.0" prefWidth="390.0" style="-fx-background-color: #ffd400;" text="log out" textFill="#09094f">
+                <Button fx:id="logOut" layoutX="57.0" layoutY="458.0" mnemonicParsing="false" onAction="#logOut" prefHeight="10.0" prefWidth="390.0" style="-fx-background-color: #ffd400;" text="log out" textFill="#09094f">
                     <font>
                         <Font name="Niagara Solid" size="30.0" />
                     </font>

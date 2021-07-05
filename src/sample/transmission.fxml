@@ -129,7 +129,7 @@
                         </LinearGradient>
                     </textFill>
                 </Label>
-                <TextField fx:id="amount" layoutX="70.0" layoutY="202.0" prefHeight="30.0" prefWidth="360.0" style="-fx-background-color: #baaa61;">
+                <TextField fx:id="amount" alignment="CENTER" layoutX="70.0" layoutY="202.0" prefHeight="30.0" prefWidth="360.0" style="-fx-background-color: #baaa61;">
                     <font>
                         <Font name="Bodoni MT Black" size="15.0" />
                     </font>
@@ -211,11 +211,43 @@
                     <font>
                         <Font name="Bodoni MT Black" size="15.0" />
                     </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.8313725590705872" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
                 </Label>
                 <Label fx:id="alias" layoutX="275.0" layoutY="423.0" prefHeight="26.0" prefWidth="200.0">
                     <font>
                         <Font name="Bodoni MT Black" size="15.0" />
                     </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.8313725590705872" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
                 </Label>
                 <Button fx:id="transmit" alignment="CENTER" layoutX="208.0" layoutY="516.0" mnemonicParsing="false" onAction="#transmit" style="-fx-background-color: #ffd400;" text="transmit" textFill="#09094f" visible="false">
                     <font>

@@ -55,16 +55,10 @@ public class CreateAcc implements Initializable {
         else {
             Main main = new Main();
             main.changeScene("enter.fxml");
-//            Main.out.writeUTF(kinds);
- //           Main.out.writeUTF(passwords);
- //           Main.out.writeUTF(aliass);
-  //          Main.out.writeUTF("enter");
+            Main.out.writeUTF(kinds);
+            Main.out.writeUTF(passwords);
+            Main.out.writeUTF(aliass);
+            Main.out.writeUTF("enter");
         }
-    }
-
-    public void back(ActionEvent actionEvent) throws Exception {
-        Main main = new Main();
-        main.changeScene("afterSignUpButton.fxml");
-        //Main.out.writeUTF("back");
     }
 }

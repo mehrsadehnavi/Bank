@@ -27,17 +27,22 @@ public class AfterSignInButton {
     }
 
     public void continueButton(ActionEvent actionEvent) throws Exception {
+        Main.out.writeUTF("continue");
+
         nationals = national.getText().toString();
         passwords = password.getText().toString();
-        //Main.out.writeUTF(nationals);
-        //Main.out.writeUTF(passwords);
+
+        Main.out.writeUTF(nationals);
+        Main.out.writeUTF(passwords);
 
         if (Main.in.readBoolean()) {
             Main main = new Main();
             main.changeScene("logIn.fxml");
-            //Main.out.writeUTF("LogIn");
-        } else if (nationals.equals("") || passwords.equals(""))
+        }
+
+        else if (nationals.equals("") || passwords.equals(""))
             label.setText("Empty field!");
+
         else
             label.setText("Please make sure the username and password are correct!");
     }
@@ -45,6 +50,6 @@ public class AfterSignInButton {
     public void back(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
         main.changeScene("signUpOrIn.fxml");
-        //Main.out.writeUTF("back");
+        Main.out.writeUTF("back");
     }
 }

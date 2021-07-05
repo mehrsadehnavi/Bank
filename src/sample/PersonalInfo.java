@@ -31,11 +31,9 @@ public class PersonalInfo {
     Label balance;
     @FXML
     TextArea transaction;
-    @FXML
-    Button done;
 
     public void button() throws IOException {
-
+        transaction.setEditable(false);
         int i = 0;
         while (i < 4)
         {
@@ -62,6 +60,7 @@ public class PersonalInfo {
                 balance.setText(Main.in.readUTF().toString());
             i++;
         }
+        transaction.setText(Main.in.readUTF());
         button.setDisable(true);
     }
 
@@ -73,7 +72,7 @@ public class PersonalInfo {
     public void back(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
         main.changeScene("enter.fxml");
-        //Main.out.writeUTF("back");
+        Main.out.writeUTF("back");
     }
 
     /* @Override

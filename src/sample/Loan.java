@@ -16,12 +16,6 @@ public class Loan implements Initializable {
     @FXML
     TextField amount;
     @FXML
-    Label baf;
-    @FXML
-    Label balance;
-    @FXML
-    Button calculate;
-    @FXML
     Button done;
     @FXML
     ChoiceBox payBack;
@@ -39,35 +33,38 @@ public class Loan implements Initializable {
         payBack.getItems().add("one year");
     }
 
-    public void calculate(ActionEvent actionEvent) throws IOException {
+    public void done(ActionEvent actionEvent) throws Exception {
+        Main.out.writeUTF("done");
         amounts = amount.getText().toString();
         payBacks = payBack.getValue().toString();
 
-
         if (payBacks == null)
+        {
             label.setText("Please select a pay back period!");
-        else {
-            if (amounts.isEmpty())
-                label.setText("Empty field!");
-            else {
-                Main.out.writeUTF(amounts);
-                Main.out.writeUTF(payBacks);
-                balance.setText("Balance after loan:");
-                //baf.setText();
-                done.setVisible(true);
-                calculate.setVisible(false);
+            Main.out.writeBoolean(false);
+        }
+        else if (amounts.isEmpty())
+        {
+            label.setText("Empty field!");
+            Main.out.writeBoolean(false);
+        }
+        else
+        {
+            Main.out.writeBoolean(true);
+            Main.out.writeUTF(amounts);
+            Main.out.writeUTF(payBacks);
+            if(!(Main.in.readBoolean()))
+                label.setText("You have already requested a loan!");
+            else
+            {
+                Main main = new Main();
+                main.changeScene("enter.fxml");
             }
         }
     }
-
-    public void done(ActionEvent actionEvent) throws Exception {
-        Main main = new Main();
-        main.changeScene("enter.fxml");
-    }
-
     public void back(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
         main.changeScene("enter.fxml");
-        //Main.out.writeUTF("back");
+        Main.out.writeUTF("back");
     }
 }

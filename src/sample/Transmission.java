@@ -63,10 +63,17 @@ public class Transmission {
 
     public void transmit(ActionEvent actionEvent) throws Exception {
         Main.out.writeUTF("transmit");
-        if(!(Main.in.readBoolean()))
+
+        if(!(Main.in.readBoolean())) {
             label.setText("Insufficient balance!");
-        else
-        {
+            transmit.setVisible(false);
+            number.setText("");
+            alias.setText("");
+            al.setText("");
+            an.setText("");
+        }
+
+        else {
             Main main = new Main();
             main.changeScene("enter.fxml");
         }
@@ -75,6 +82,6 @@ public class Transmission {
     public void back(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
         main.changeScene("enter.fxml");
-        //Main.out.writeUTF("back");
+        Main.out.writeUTF("back");
     }
 }

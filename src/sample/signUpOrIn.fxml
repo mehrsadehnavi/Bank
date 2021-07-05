@@ -78,7 +78,7 @@
                             </stops>
                         </LinearGradient>
                     </stroke></Line>
-                <Button fx:id="signInButton" layoutX="165.0" layoutY="417.0" mnemonicParsing="false" onAction="#signIn" prefHeight="70.0" prefWidth="160.0" style="-fx-background-color: #ed614b;" text="Sign in" textFill="#09094f">
+                <Button fx:id="signInButton" layoutX="164.0" layoutY="370.0" mnemonicParsing="false" onAction="#signIn" prefHeight="70.0" prefWidth="160.0" style="-fx-background-color: #ffd400;" text="Sign in" textFill="#09094f">
                     <font>
                         <Font name="Niagara Solid" size="33.0" />
                     </font>
@@ -93,7 +93,7 @@
                         <Font name="Niagara Solid" size="26.0" />
                     </font>
                 </Label>
-                <Label alignment="CENTER" layoutX="97.0" layoutY="377.0" prefHeight="27.0" prefWidth="294.0" text="already have an account? sign in!" textFill="#ed614b">
+                <Label alignment="CENTER" layoutX="101.0" layoutY="330.0" prefHeight="27.0" prefWidth="294.0" text="already have an account? sign in!" textFill="#ffd400">
                     <font>
                         <Font name="Niagara Solid" size="26.0" />
                     </font>
@@ -119,6 +119,11 @@
                         </RadialGradient>
                     </textFill>
                 </Label>
+            <Button layoutX="164.0" layoutY="452.0" mnemonicParsing="false" onAction="#exit" prefHeight="70.0" prefWidth="160.0" style="-fx-background-color: #ed614b;" text="Exit" textFill="#09094f">
+               <font>
+                  <Font name="Niagara Solid" size="33.0" />
+               </font>
+            </Button>
             </children></AnchorPane>
     </center>
 </BorderPane>

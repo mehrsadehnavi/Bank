@@ -108,7 +108,7 @@
                <font>
                   <Font name="Bodoni MT Black" size="15.0" />
                </font></TextField>
-                <Label fx:id="amount" layoutX="219.0" layoutY="363.0" text="Amount:" visible="false">
+                <Label fx:id="amount" layoutX="219.0" layoutY="363.0" text="Amount:">
                     <font>
                         <Font name="Niagara Solid" size="30.0" />
                     </font>
@@ -129,7 +129,7 @@
                         </LinearGradient>
                     </textFill>
                 </Label>
-                <Button fx:id="pay" layoutX="184.0" layoutY="504.0" mnemonicParsing="false" onAction="#pay" prefHeight="54.0" prefWidth="127.0" style="-fx-background-color: #ffd400;" text="pay" textFill="#09094f" visible="false">
+                <Button fx:id="pay" layoutX="184.0" layoutY="504.0" mnemonicParsing="false" onAction="#pay" prefHeight="54.0" prefWidth="127.0" style="-fx-background-color: #ffd400;" text="pay" textFill="#09094f">
                     <font>
                         <Font name="Niagara Solid" size="30.0" />
                     </font>
@@ -156,7 +156,7 @@
                </textFill>
             </Button>
             <ImageView fx:id="view" fitHeight="90.0" fitWidth="102.0" layoutX="196.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true" />
-            <Label fx:id="money" alignment="CENTER" layoutX="91.0" layoutY="407.0" prefHeight="26.0" prefWidth="313.0" style="-fx-background-color: #baaa61;" visible="false">
+            <Label fx:id="money" alignment="CENTER" layoutX="91.0" layoutY="407.0" prefHeight="26.0" prefWidth="313.0" style="-fx-background-color: #baaa61;">
                <font>
                   <Font name="Bodoni MT Black" size="15.0" />
                </font>

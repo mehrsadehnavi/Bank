@@ -7,6 +7,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class AfterSignUpButton {
     @FXML
     TextField username;
@@ -53,6 +56,15 @@ public class AfterSignUpButton {
         telephones = telephone.getText().toString();
         confirmPasswords = confirmPassword.getText().toString();
 
+        String regexID = "\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d";
+        String regexTelephone = "\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d";
+
+        Pattern patternID = Pattern.compile(regexID);
+        Pattern patternTelephone = Pattern.compile(regexTelephone);
+
+        Matcher matcherID = patternID.matcher(nationals);
+        Matcher matcherTelephone = patternTelephone.matcher(telephones);
+
         if (usernames.isEmpty()) {
             label.setText("Empty field!");
             Main.out.writeBoolean(false);
@@ -88,22 +100,32 @@ public class AfterSignUpButton {
             Main.out.writeBoolean(false);
         }
 
+        else if (!(matcherID.matches())) {
+            label.setText("Make sure your ID has a correct format!");
+            Main.out.writeBoolean(false);
+        }
+
+        else if (!(matcherTelephone.matches())) {
+            label.setText("Make sure your telephone number has a correct format!");
+            Main.out.writeBoolean(false);
+        }
+
         else {
-            //Main.out.writeBoolean(true);
+            Main.out.writeBoolean(true);
             Main main = new Main();
             main.changeScene("createAcc.fxml");
-            //Main.out.writeUTF(usernames);
-            //Main.out.writeUTF(nationals);
-            //Main.out.writeUTF(telephones);
-            //Main.out.writeUTF(emails);
-            //Main.out.writeUTF(passwords);
-            //Main.out.writeUTF("createAccount");
+            Main.out.writeUTF(usernames);
+            Main.out.writeUTF(nationals);
+            Main.out.writeUTF(telephones);
+            Main.out.writeUTF(emails);
+            Main.out.writeUTF(passwords);
+            Main.out.writeUTF("createAccount");
         }
     }
 
     public void back(ActionEvent actionEvent) throws Exception {
         Main main = new Main();
         main.changeScene("signUpOrIn.fxml");
-        //Main.out.writeUTF("back");
+        Main.out.writeUTF("back");
     }
 }

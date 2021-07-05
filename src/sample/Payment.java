@@ -7,10 +7,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
-
 import java.io.File;
-import java.io.IOException;
+
 
 public class Payment {
     @FXML
@@ -30,10 +28,12 @@ public class Payment {
 
     public void search(ActionEvent actionEvent) throws Exception {
         bills = bill.getText().toString();
+
         if (bills.isEmpty()){
             label.setText("Empty field!");
-           // Main.out.writeBoolean(false);
+            Main.out.writeBoolean(false);
         }
+
         else {
             money.setVisible(true);
            // money.setText("");
