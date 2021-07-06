@@ -31,7 +31,7 @@ public class LogIn {
             label.setText("Empty field!");
         else if (!(Main.in.readBoolean()))
         {
-            label.setText("Please make sure the alias or the password are correct!");
+            label.setText("Make sure the alias or the password are correct!");
         }
         else
         {

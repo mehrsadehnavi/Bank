@@ -96,7 +96,7 @@ public class AfterSignUpButton {
         }
         else if (!(password.getText().toString().equals(confirmPassword.getText().toString())))
         {
-            label.setText("Please make sure the password and confirmation are the same!");
+            label.setText("Make sure the password and confirmation are the same!");
             Main.out.writeBoolean(false);
         }
         else if (!(matcherID.matches())) {

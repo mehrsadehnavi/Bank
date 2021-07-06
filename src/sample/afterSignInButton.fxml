@@ -159,7 +159,7 @@
                         <Font name="Calisto MT Bold" size="25.0" />
                     </font>
                 </Button>
-                <Label fx:id="label" alignment="CENTER" layoutX="100.0" layoutY="22.0" prefHeight="28.0" prefWidth="300.0" textFill="#eb604b">
+                <Label fx:id="label" alignment="CENTER" layoutX="58.0" layoutY="18.0" prefHeight="28.0" prefWidth="398.0" textFill="#eb604b">
                     <font>
                         <Font name="Calisto MT Bold" size="15.0" />
                     </font></Label>
@@ -167,9 +167,9 @@
                     <font>
                         <Font name="Calisto MT" size="10.0" />
                     </font></PasswordField>
-                <Button layoutX="16.0" layoutY="18.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #09094f;" text="Back">
+                <Button layoutX="16.0" layoutY="18.0" mnemonicParsing="false" onAction="#back" prefHeight="46.0" prefWidth="54.0" style="-fx-background-color: #09094f;" text="Back">
                     <font>
-                        <Font name="Calisto MT Bold" size="22.0" />
+                        <Font name="Calisto MT Bold" size="15.0" />
                     </font>
                     <textFill>
                         <LinearGradient endX="1.0" endY="1.0">

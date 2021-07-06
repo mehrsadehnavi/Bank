@@ -44,13 +44,13 @@ public class Payment {
                 pay.setVisible(true);
                 String serverRequest = Main.in.readUTF();
                 if (serverRequest.equals("ab"))
-                    view.setImage(new Image(new File("C:\\Users\\amirhosein\\IdeaProjects\\Bank\\src\\photos\\ab.png").toURI().toString()));
+                    view.setImage(new Image(new File("D:\\Bank\\src\\sample\\ab.png").toURI().toString()));
                 else if (serverRequest.equals("gaz"))
-                    view.setImage(new Image(new File("C:\\Users\\amirhosein\\IdeaProjects\\Bank\\src\\photos\\gaz.png").toURI().toString()));
+                    view.setImage(new Image(new File("D:\\Bank\\src\\sample\\gaz.png").toURI().toString()));
                 else if (serverRequest.equals("bargh"))
-                    view.setImage(new Image(new File("C:\\Users\\amirhosein\\IdeaProjects\\Bank\\src\\photos\\bargh.png").toURI().toString()));
+                    view.setImage(new Image(new File("D:\\Bank\\src\\sample\\bargh.png").toURI().toString()));
                 else if (serverRequest.equals("mokhaberat"))
-                    view.setImage(new Image(new File("C:\\Users\\amirhosein\\IdeaProjects\\Bank\\src\\photos\\mokhaberat.png").toURI().toString()));
+                    view.setImage(new Image(new File("D:\\Bank\\src\\sample\\mokhaberat.png").toURI().toString()));
             }
             else
                 label.setText("Invalid bill number!");
@@ -72,7 +72,6 @@ public class Payment {
     }
 
     public void back(ActionEvent actionEvent) throws Exception {
-
         Main main = new Main();
         main.changeScene("enter.fxml");
         Main.out.writeUTF("back");

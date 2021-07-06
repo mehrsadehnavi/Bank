@@ -78,29 +78,29 @@
                             </stops>
                         </LinearGradient>
                     </stroke></Line>
-                <Button fx:id="signInButton" layoutX="164.0" layoutY="370.0" mnemonicParsing="false" onAction="#signIn" prefHeight="70.0" prefWidth="160.0" style="-fx-background-color: #ffd400;" text="Sign in" textFill="#09094f">
+                <Button fx:id="signInButton" layoutX="167.0" layoutY="389.0" mnemonicParsing="false" onAction="#signIn" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: #ffd400;" text="Sign in" textFill="#09094f">
                     <font>
-                        <Font name="Niagara Solid" size="33.0" />
+                        <Font name="Calisto MT Bold" size="25.0" />
                     </font>
                 </Button>
-                <Button fx:id="signUpButton" layoutX="164.0" layoutY="247.0" mnemonicParsing="false" onAction="#signUp" prefHeight="70.0" prefWidth="160.0" style="-fx-background-color: #FFD700;" text="Sign up " textFill="#09094f">
+                <Button fx:id="signUpButton" layoutX="167.0" layoutY="248.0" mnemonicParsing="false" onAction="#signUp" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: #FFD700;" text="Sign up " textFill="#09094f">
                     <font>
-                        <Font name="Niagara Solid" size="33.0" />
+                        <Font name="Calisto MT Bold" size="25.0" />
                     </font>
                 </Button>
-                <Label alignment="CENTER" layoutX="145.0" layoutY="212.0" prefHeight="20.0" prefWidth="200.0" text="create an account" textFill="GOLD">
+                <Label alignment="CENTER" layoutX="144.0" layoutY="204.0" prefHeight="20.0" prefWidth="200.0" text="Create an account" textFill="GOLD">
                     <font>
-                        <Font name="Niagara Solid" size="26.0" />
+                        <Font name="Calisto MT Bold" size="25.0" />
                     </font>
                 </Label>
-                <Label alignment="CENTER" layoutX="101.0" layoutY="330.0" prefHeight="27.0" prefWidth="294.0" text="already have an account? sign in!" textFill="#ffd400">
+                <Label alignment="CENTER" layoutX="58.0" layoutY="341.0" prefHeight="34.0" prefWidth="379.0" text="already have an account? sign in!" textFill="#ffd400">
                     <font>
-                        <Font name="Niagara Solid" size="26.0" />
+                        <Font name="Calisto MT Bold" size="25.0" />
                     </font>
                 </Label>
                 <Label alignment="CENTER" layoutX="84.0" layoutY="59.0" prefHeight="90.0" prefWidth="326.0" text="Welcome">
                     <font>
-                        <Font name="Gabriola" size="95.0" />
+                        <Font name="Calisto MT Bold Italic" size="70.0" />
                     </font>
                     <textFill>
                         <RadialGradient centerX="0.5177777608235677" centerY="0.5" focusAngle="113.03" focusDistance="0.037383141918717167" radius="0.5">
@@ -119,9 +119,9 @@
                         </RadialGradient>
                     </textFill>
                 </Label>
-                <Button layoutX="164.0" layoutY="452.0" mnemonicParsing="false" onAction="#exit" prefHeight="70.0" prefWidth="160.0" style="-fx-background-color: #ed614b;" text="Exit" textFill="#09094f">
+                <Button layoutX="167.0" layoutY="452.0" mnemonicParsing="false" onAction="#exit" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: #ed614b;" text="Exit" textFill="#09094f">
                     <font>
-                        <Font name="Niagara Solid" size="33.0" />
+                        <Font name="Calisto MT Bold" size="25.0" />
                     </font>
                 </Button>
             </children></AnchorPane>

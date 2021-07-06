@@ -18,13 +18,9 @@ public class Transmission {
     @FXML
     Button transmit;
     @FXML
-    Label ba;
-    @FXML
     Label an;
     @FXML
     Label al;
-    @FXML
-    Label balanceAfter;
     @FXML
     Label number;
     @FXML

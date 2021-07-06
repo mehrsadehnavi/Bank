@@ -83,9 +83,9 @@
                         </LinearGradient>
                     </stroke>
                 </Line>
-                <Label layoutX="102.0" layoutY="190.0" prefHeight="26.0" prefWidth="305.0" text="Please enter the bill's number:">
+                <Label layoutX="78.0" layoutY="175.0" prefHeight="34.0" prefWidth="344.0" text="Please enter the bill's number:">
                     <font>
-                        <Font name="Calisto MT Bold Italic" size="24.0" />
+                        <Font name="Calisto MT Bold" size="25.0" />
                     </font>
                     <textFill>
                         <LinearGradient endX="1.0" endY="1.0">
@@ -106,11 +106,11 @@
                 </Label>
                 <TextField fx:id="bill" alignment="CENTER" layoutX="93.0" layoutY="230.0" prefHeight="26.0" prefWidth="313.0" style="-fx-background-color: #baaa61;">
                     <font>
-                        <Font name="Bodoni MT Black" size="15.0" />
+                        <Font name="Calisto MT" size="15.0" />
                     </font></TextField>
-                <Label fx:id="amount" layoutX="183.0" layoutY="407.0" text="Amount:" visible="false">
+                <Label fx:id="amount" layoutX="120.0" layoutY="406.0" text="Amount:" visible="false">
                     <font>
-                        <Font name="Niagara Solid" size="30.0" />
+                        <Font name="Calisto MT Bold" size="25.0" />
                     </font>
                     <textFill>
                         <LinearGradient endX="1.0" endY="1.0">
@@ -129,14 +129,14 @@
                         </LinearGradient>
                     </textFill>
                 </Label>
-                <Button fx:id="pay" layoutX="184.0" layoutY="504.0" mnemonicParsing="false" onAction="#pay" prefHeight="54.0" prefWidth="127.0" style="-fx-background-color: #ffd400;" text="pay" textFill="#09094f" visible="false">
+                <Button fx:id="pay" layoutX="170.0" layoutY="510.0" mnemonicParsing="false" onAction="#pay" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: #ffd400;" text="Pay" textFill="#09094f" visible="false">
                     <font>
-                        <Font name="Niagara Solid" size="30.0" />
+                        <Font name="Calisto MT Bold" size="25.0" />
                     </font>
                 </Button>
                 <Button layoutX="16.0" layoutY="18.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #09094f;" text="Back">
                     <font>
-                        <Font name="Niagara Solid" size="20.0" />
+                        <Font name="Calisto MT Bold" size="15.0" />
                     </font>
                     <textFill>
                         <LinearGradient endX="1.0" endY="1.0">
@@ -156,9 +156,9 @@
                     </textFill>
                 </Button>
                 <ImageView fx:id="view" fitHeight="90.0" fitWidth="102.0" layoutX="196.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true" />
-                <Label fx:id="money" layoutX="250.0" layoutY="407.0" prefHeight="26.0" prefWidth="173.0" style="-fx-background-color: #09094f;" visible="false">
+                <Label fx:id="money" alignment="CENTER" layoutX="243.0" layoutY="409.0" prefHeight="26.0" prefWidth="173.0" style="-fx-background-color: #09094f;" visible="false">
                     <font>
-                        <Font name="Niagara Solid" size="30.0" />
+                        <Font name="Calisto MT Bold" size="20.0" />
                     </font>
                     <textFill>
                         <LinearGradient endX="1.0" endY="1.0">
@@ -176,14 +176,14 @@
                             </stops>
                         </LinearGradient>
                     </textFill></Label>
-                <Button layoutX="183.0" layoutY="272.0" mnemonicParsing="false" onAction="#search" prefHeight="54.0" prefWidth="127.0" style="-fx-background-color: #ffd400;" text="Search" textFill="#09094f">
+                <Button layoutX="170.0" layoutY="272.0" mnemonicParsing="false" onAction="#search" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: #ffd400;" text="Search" textFill="#09094f">
                     <font>
-                        <Font name="Niagara Solid" size="30.0" />
+                        <Font name="Calisto MT Bold" size="25.0" />
                     </font>
                 </Button>
-                <Label fx:id="label" layoutX="58.0" layoutY="22.0" prefHeight="18.0" prefWidth="380.0" textFill="#ed614b">
+                <Label fx:id="label" alignment="CENTER" layoutX="58.0" layoutY="22.0" prefHeight="18.0" prefWidth="398.0" textFill="#ed614b">
                     <font>
-                        <Font name="Niagara Solid" size="25.0" />
+                        <Font name="Calisto MT Bold" size="15.0" />
                     </font></Label>
             </children>
         </AnchorPane>

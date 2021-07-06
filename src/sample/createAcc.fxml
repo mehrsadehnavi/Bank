@@ -213,7 +213,7 @@
                     <font>
                         <Font name="Calisto MT Bold" size="25.0" />
                     </font></Button>
-                <Label fx:id="label" alignment="CENTER" layoutX="58.0" layoutY="22.0" prefHeight="18.0" prefWidth="380.0" textFill="#ed614b">
+                <Label fx:id="label" alignment="CENTER" layoutX="58.0" layoutY="18.0" prefHeight="18.0" prefWidth="398.0" textFill="#ed614b">
                     <font>
                         <Font name="Calisto MT Bold" size="15.0" />
                     </font></Label>

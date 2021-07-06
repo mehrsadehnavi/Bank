@@ -61,7 +61,7 @@ public class Enter {
     }
 
     public void button() throws Exception {
-        picture.setImage(new Image(new File("C:\\Users\\amirhosein\\IdeaProjects\\Bank\\src\\photos\\ax.png").toURI().toString()));
+        picture.setImage(new Image(new File("D:\\Bank\\src\\sample\\ax.png").toURI().toString()));
         int i = 0;
         while (i < 2)
         {

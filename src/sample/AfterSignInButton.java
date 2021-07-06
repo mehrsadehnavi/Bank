@@ -40,7 +40,7 @@ public class AfterSignInButton {
         else if (nationals.equals("") || passwords.equals(""))
             label.setText("Empty field!");
         else
-            label.setText("Please make sure the username and password are correct!");
+            label.setText("Make sure the username and password are correct!");
     }
     public void back(ActionEvent actionEvent) throws Exception {
         Main main = new Main();

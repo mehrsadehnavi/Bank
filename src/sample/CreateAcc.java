@@ -50,7 +50,7 @@ public class CreateAcc implements Initializable {
         else if (confirmPasswords.equals(""))
             label.setText("Empty field!");
         else if (!(passwords.equals(confirmPasswords)))
-            label.setText("Please make sure the password and confirmation are the same!");
+            label.setText("Make sure the password and confirmation are the same!");
 
         else {
             Main main = new Main();

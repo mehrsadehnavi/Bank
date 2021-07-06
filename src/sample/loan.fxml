@@ -82,9 +82,9 @@
                         </LinearGradient>
                     </stroke>
                 </Line>
-                <Label layoutX="158.0" layoutY="73.0" text="Requesting for loan">
+                <Label layoutX="97.0" layoutY="86.0" text="Requesting for loan">
                     <font>
-                        <Font name="Niagara Solid" size="40.0" />
+                        <Font name="Calisto MT Bold" size="35.0" />
                     </font>
                     <textFill>
                         <LinearGradient endX="1.0" endY="1.0">
@@ -103,9 +103,9 @@
                         </LinearGradient>
                     </textFill>
                 </Label>
-                <Label layoutX="94.0" layoutY="179.0" text="Please enter the amount of money you need:">
+                <Label layoutX="119.0" layoutY="153.0" text="Please enter the amount ">
                     <font>
-                        <Font name="Niagara Solid" size="30.0" />
+                        <Font name="Calisto MT Bold" size="24.0" />
                     </font>
                     <textFill>
                         <LinearGradient endX="1.0" endY="1.0">
@@ -124,14 +124,14 @@
                         </LinearGradient>
                     </textFill>
                 </Label>
-                <TextField fx:id="amount" layoutX="108.0" layoutY="245.0" prefHeight="28.0" prefWidth="283.0" style="-fx-background-color: #baaa61;">
+                <TextField fx:id="amount" alignment="CENTER" layoutX="108.0" layoutY="245.0" prefHeight="28.0" prefWidth="283.0" style="-fx-background-color: #baaa61;">
                     <font>
-                        <Font name="Bodoni MT Black" size="15.0" />
+                        <Font name="Calisto MT" size="15.0" />
                     </font>
                 </TextField>
-                <Label layoutX="141.0" layoutY="290.0" text="Please select pay back period:">
+                <Label layoutX="92.0" layoutY="296.0" text="Please select pay back period:">
                     <font>
-                        <Font name="Niagara Solid" size="30.0" />
+                        <Font name="Calisto MT Bold" size="24.0" />
                     </font>
                     <textFill>
                         <LinearGradient endX="1.0" endY="1.0">
@@ -151,14 +151,14 @@
                     </textFill>
                 </Label>
                 <ChoiceBox fx:id="payBack" layoutX="173.0" layoutY="347.0" prefWidth="150.0" style="-fx-background-color: #baaa61;" />
-                <Button fx:id="done" layoutX="193.0" layoutY="497.0" mnemonicParsing="false" onAction="#done" prefHeight="46.0" prefWidth="109.0" style="-fx-background-color: #ffd400;" text="Request" textFill="#09094f">
+                <Button fx:id="done" layoutX="170.0" layoutY="510.0" mnemonicParsing="false" onAction="#done" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: #ffd400;" text="Request" textFill="#09094f">
                     <font>
-                        <Font name="Niagara Solid" size="25.0" />
+                        <Font name="Calisto MT Bold" size="25.0" />
                     </font>
                 </Button>
-                <Label layoutX="101.0" layoutY="394.0" prefHeight="34.0" prefWidth="294.0" text="Certain amount of money will be deducted from your account.">
+                <Label layoutX="139.0" layoutY="383.0" prefHeight="34.0" prefWidth="222.0" text="Certain amount of money will be ">
                     <font>
-                        <Font name="Niagara Solid" size="20.0" />
+                        <Font name="Calisto MT Bold" size="15.0" />
                     </font>
                     <textFill>
                         <LinearGradient endX="1.0" endY="1.0">
@@ -176,13 +176,13 @@
                             </stops>
                         </LinearGradient>
                     </textFill></Label>
-                <Label fx:id="label" alignment="CENTER" layoutX="58.0" layoutY="22.0" prefHeight="18.0" prefWidth="380.0" textFill="#ed614b">
+                <Label fx:id="label" alignment="CENTER" layoutX="58.0" layoutY="22.0" prefHeight="18.0" prefWidth="398.0" textFill="#ed614b">
                     <font>
-                        <Font name="Niagara Solid" size="25.0" />
+                        <Font name="Calisto MT Bold" size="15.0" />
                     </font></Label>
                 <Button layoutX="16.0" layoutY="18.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #09094f;" text="Back">
                     <font>
-                        <Font name="Niagara Solid" size="20.0" />
+                        <Font name="Calisto MT Bold" size="15.0" />
                     </font>
                     <textFill>
                         <LinearGradient endX="1.0" endY="1.0">
@@ -206,6 +206,48 @@
                         </LinearGradient>
                     </textFill>
                 </Button>
+            <Label layoutX="146.0" layoutY="187.0" text="of money you need:">
+               <font>
+                  <Font name="Calisto MT Bold" size="24.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.8313725590705872" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="155.0" layoutY="417.0" text="deducted from your account.">
+               <font>
+                  <Font name="Calisto MT Bold" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.8313725590705872" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.929411768913269" green="0.3803921639919281" blue="0.29411765933036804" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
             </children>
         </AnchorPane>
     </left>

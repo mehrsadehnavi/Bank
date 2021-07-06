@@ -16,6 +16,7 @@ public class Main extends Application {
     static OutputStream outputStream;
     static DataInputStream in;
     static DataOutputStream out;
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         stage = primaryStage;
@@ -26,7 +27,9 @@ public class Main extends Application {
         outputStream = socket.getOutputStream();
         in = new DataInputStream(inputStream);
         out = new DataOutputStream(outputStream);
-        primaryStage.setScene(new Scene(root, 500, 600));
+        Scene scene = new Scene(root, 500, 600);
+        scene.getStylesheets().add("color.css");
+        primaryStage.setScene(scene);
         //primaryStage.setTitle("");
         primaryStage.show();
     }
@@ -35,9 +38,9 @@ public class Main extends Application {
         Parent pane = FXMLLoader.load(getClass().getResource(fxml));
         stage.getScene().setRoot(pane);
     }
-    public void exit() {
-        stage.close();
-    }
+
+    public void exit() { stage.close(); }
+
     public static void main(String[] args) {
         launch(args);
     }
